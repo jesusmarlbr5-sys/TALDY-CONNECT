@@ -1,0 +1,57 @@
+import {
+  Atom,
+  Baby,
+  BookOpen,
+  Brain,
+  Calculator,
+  Dna,
+  Dumbbell,
+  FlaskConical,
+  Globe,
+  GraduationCap,
+  Landmark,
+  Laptop,
+  Leaf,
+  Music,
+  Newspaper,
+  Palette,
+  PawPrint,
+  Pencil,
+  Plane,
+  Scale,
+  Sigma,
+  TrendingUp,
+  Wheat,
+  type LucideIcon,
+} from 'lucide-react'
+
+const ICONS: Record<string, LucideIcon> = {
+  graduation: GraduationCap,
+  brain: Brain,
+  pencil: Pencil,
+  baby: Baby,
+  sigma: Sigma,
+  atom: Atom,
+  flask: FlaskConical,
+  dna: Dna,
+  globe: Globe,
+  leaf: Leaf,
+  landmark: Landmark,
+  book: BookOpen,
+  newspaper: Newspaper,
+  scale: Scale,
+  trending: TrendingUp,
+  calculator: Calculator,
+  plane: Plane,
+  laptop: Laptop,
+  dumbbell: Dumbbell,
+  music: Music,
+  palette: Palette,
+  wheat: Wheat,
+  paw: PawPrint,
+}
+
+export function SubjectIcon({ name, className }: { name: string; className?: string }) {
+  const Icon = ICONS[name] ?? BookOpen
+  return <Icon className={className} aria-hidden="true" />
+}
