@@ -12,9 +12,7 @@ export function SiteFooter() {
     <footer className="mt-16 border-t bg-muted/40">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col gap-3">
-          <Link href="/TALDY-CONNECT">
-            <Logo />
-          </Link>
+          <Logo />
           <p className="text-sm text-muted-foreground">{t.footer.text}</p>
         </div>
         <p className="flex items-center gap-2 font-script text-3xl text-primary">
@@ -22,9 +20,9 @@ export function SiteFooter() {
           <Heart className="size-6 fill-brand-pink text-brand-pink" aria-hidden="true" />
         </p>
         <nav aria-label={t.nav.mainNav} className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
-          <Link href="/TALDY-CONNECT/#english" className="text-muted-foreground hover:text-foreground">{t.nav.english}</Link>
-          <Link href="/TALDY-CONNECT/#events" className="text-muted-foreground hover:text-foreground">{t.nav.events}</Link>
-          <Link href="/TALDY-CONNECT/glossary" className="text-muted-foreground hover:text-foreground">{t.nav.glossary}</Link>
+          <Link href="/#english" className="text-muted-foreground hover:text-foreground">{t.nav.english}</Link>
+          <Link href="/#events" className="text-muted-foreground hover:text-foreground">{t.nav.events}</Link>
+          <Link href="/glossary" className="text-muted-foreground hover:text-foreground">{t.nav.glossary}</Link>
         </nav>
       </div>
       <p className="border-t px-4 py-4 text-center text-xs text-muted-foreground">
