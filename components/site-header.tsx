@@ -16,18 +16,18 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   const links = [
-    { href: '/TALDY-CONNECT', label: t.nav.home },
-    { href: '/TALDY-CONNECT/#english', label: t.nav.english },
-    { href: '/TALDY-CONNECT/#volunteer', label: t.nav.volunteer },
-    { href: '/TALDY-CONNECT/#events', label: t.nav.events },
-    { href: '/TALDY-CONNECT/#speaking', label: t.nav.speaking },
+    { href: '/', label: t.nav.home },
+    { href: '/#english', label: t.nav.english },
+    { href: '/#volunteer', label: t.nav.volunteer },
+    { href: '/#events', label: t.nav.events },
+    { href: '/#speaking', label: t.nav.speaking },
   ]
-  const glossaryActive = pathname.startsWith('/TALDY-CONNECT/glossary') || pathname.startsWith('/glossary')
+  const glossaryActive = pathname.startsWith('/glossary')
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-4 px-4 sm:px-6">
-        <Link href="/TALDY-CONNECT" className="shrink-0" onClick={() => setOpen(false)}>
+        <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
           <Logo />
         </Link>
 
@@ -42,7 +42,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            href="/TALDY-CONNECT/glossary"
+            href="/glossary"
             aria-current={glossaryActive ? 'page' : undefined}
             className={cn(
               'ml-1 inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-bold transition-colors',
@@ -88,7 +88,7 @@ export function SiteHeader() {
             ))}
             <li>
               <Link
-                href="/TALDY-CONNECT/glossary"
+                href="/glossary"
                 onClick={() => setOpen(false)}
                 className="mt-1 flex items-center gap-2 rounded-xl bg-primary px-3 py-2.5 font-bold text-primary-foreground"
               >
