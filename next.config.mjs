@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export', 
   images: {
-    unoptimized: true,
+    unoptimized: true, 
   },
-}
+  basePath: '/TALDY-CONNECT', 
+};
 
-export default nextConfig
+export default nextConfig;
+  
